@@ -26,32 +26,36 @@ section {
   padding: 20px 6%;
 }
 h2 {
+    font-size: 28px;
     text-align: center;
 }
 h4 {
     color: white;
   }
-.grup p {
+.heading p {
   font-size: 20px;
+}
+.grup p {
+  font-size: 24px;
   margin-top: 25px;
   font-weight: bold;
   text-align: center;
 }
 .grup2 p {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
 .grup3 p {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
   gap: 16px;
   margin-top: 25px;
 }
@@ -62,7 +66,7 @@ h4 {
 }
 .portfolio-container .box {
   position: relative;
-  height: 225px;
+  height: 275px;
   box-shadow: 3px 3px 3px rgba(12, 226, 198, 0.432);
   overflow: hidden;
   border-radius: 15px;
@@ -149,6 +153,27 @@ h4 {
 }
 .follow .social-media button:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1366px) {
+  .heading p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .portfolio-container .box {
+    height: 225px;
+  }
+  .grup p {
+    font-size: 20px;
+  }
+  .grup2 p {
+    font-size: 20px;
+  }
+  .grup3 p {
+    font-size: 20px;
+  }
 }
 @media (max-width: 991px) {
   header {
