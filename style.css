@@ -211,7 +211,13 @@ h4 {
     padding: 10px 4%;
   }
   section {
-    padding: 85px 4%;
+    padding: 50px 4%;
+  }
+  .portfolio-container .box {
+    height: 210px;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
   }
 }
 @media (max-width: 768px){
@@ -222,7 +228,10 @@ h4 {
     gap: 12px;
   }
   .portfolio-container .box {
-    height: 200px;
+    height: 220px;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
   }
 }
 @media (max-width: 480px) and (max-height: 890px){
@@ -231,6 +240,9 @@ h4 {
   }
   .portfolio-container .box {
     height: 200px;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
   }
 }
 @media (max-width: 320px){
@@ -241,6 +253,9 @@ h4 {
     gap: 12px;
   }
   .portfolio-container .box {
-    height: 200px;
+    height: 170px;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(1, minmax(16rem, 1fr));
   }
 }
