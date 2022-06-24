@@ -239,7 +239,7 @@ h4 {
     gap: 14px;
   }
   .portfolio-container .box {
-    height: 200px;
+    height: 210px;
   }
   .portfolio-container {
     grid-template-columns: repeat(1, minmax(20rem, 1fr));
